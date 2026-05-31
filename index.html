@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Private documentation. Authorised access only." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="no-referrer" />
+  <title>TestPro AI — Private Documentation</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="alternate icon" href="assets/DyadTestPro.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="locked">
+
+  <!-- ░░░ PASSWORD LOCK SCREEN ░░░ -->
+  <div id="lock-screen" class="lock-screen">
+    <div class="lock-card">
+      <div class="lock-logo"><img src="assets/logo.svg" alt="TestPro AI logo" /></div>
+      <h1 class="lock-title">TestPro <span>AI</span></h1>
+      <p class="lock-sub">This documentation is private and encrypted. Enter the access password to unlock it.</p>
+      <form id="lock-form" class="lock-form" autocomplete="off">
+        <input type="password" id="lock-input" placeholder="Access password" aria-label="Access password" autocomplete="off" />
+        <button type="submit" id="lock-btn">Unlock</button>
+      </form>
+      <p id="lock-error" class="lock-error"></p>
+      <p class="lock-foot">🔒 Authorised viewers only · Kunal Richards</p>
+    </div>
+  </div>
+
+  <!-- Decrypted documentation is injected here -->
+  <div id="app"></div>
+
+  <script src="content.enc.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
